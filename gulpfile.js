@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var clean = require('gulp-clean');
 var ts = require('gulp-typescript');
+var mocha = require('gulp-mocha');
 
 var merge = require('merge2');
 var runSequence = require('run-sequence');
@@ -16,6 +17,11 @@ gulp.task('compile', function () {
         tsResult.dts.pipe(gulp.dest('dist/')),
         tsResult.js.pipe(gulp.dest('dist/'))
     ]);
+});
+
+gulp.task('test', ['compile'], function () {
+    gulp.src('test/**/*.ts', { read: false })
+        .pipe(mocha());
 });
 
 gulp.task('build', function (callback) {

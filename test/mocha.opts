@@ -1,0 +1,4 @@
+--compilers ts:ts-node/register
+--require ts-node/register
+--require tsconfig-paths/register
+--reporter spec
