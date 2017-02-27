@@ -1,5 +1,8 @@
-`yarn install` or `npm install`
+### Install
+* `yarn install` 
+* or `npm install`
 
-`gulp clean`
-`gulp compile`
-`gulp`
+### Build
+* `gulp clean`
+* `gulp compile`
+* `gulp` (clean + compile)

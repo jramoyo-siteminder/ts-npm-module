@@ -6,4 +6,8 @@ export default class Place {
         this.name = name;
         this.address = address;
     }
+
+    public getFullAddress() {
+        return `${this.name}, ${this.address}`;
+    }
 };
