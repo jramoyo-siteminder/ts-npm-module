@@ -1,4 +1,4 @@
-import model = require('proto/model_pb');
+import * as model from 'proto-npm-module';
 
 export default class Person {
     name: model.Name;

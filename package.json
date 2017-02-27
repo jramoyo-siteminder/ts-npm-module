@@ -1,12 +1,11 @@
 {
   "name": "ts-npm-module",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "sample typescript npm module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "mkdir -p generated/proto; protoc --js_out=import_style=commonjs,binary:generated/proto -I src/proto src/proto/*"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -33,6 +32,6 @@
     "typescript": "^2.2.1"
   },
   "dependencies": {
-    "google-protobuf": "^3.2.0"
+    "proto-npm-module": "git+ssh://git@github.com/jramoyo-siteminder/proto-npm-module.git#1.0.0"
   }
 }
