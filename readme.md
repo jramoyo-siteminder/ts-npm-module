@@ -5,4 +5,5 @@
 ### Build
 * `gulp clean`
 * `gulp compile`
+* `gulp test`
 * `gulp` (clean + compile)
