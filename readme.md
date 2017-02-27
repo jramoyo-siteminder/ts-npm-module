@@ -1,3 +1,5 @@
+Sample NPM module written in TypeScript
+
 ### Install
 * `yarn install` 
 * or `npm install`
