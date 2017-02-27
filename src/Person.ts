@@ -1,13 +1,15 @@
+import model = require('proto/model_pb');
+
 export default class Person {
-    firstName: string;
-    lastName: string;
+    name: model.Name;
 
     constructor(firstName: string, lastName: string) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+        this.name = new model.Name();
+        this.name.first = firstName;
+        this.name.last = lastName;
     }
 
     public getFullName() {
-        return `${this.firstName} ${this.lastName}`;
+        return `${this.name.first} ${this.name.last}`;
     }
 };

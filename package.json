@@ -5,7 +5,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "mkdir -p generated/proto; protoc --js_out=import_style=commonjs,binary:generated/proto -I src/proto src/proto/*"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,8 @@
     "ts-node": "^2.1.0",
     "tsconfig-paths": "^2.1.1",
     "typescript": "^2.2.1"
+  },
+  "dependencies": {
+    "google-protobuf": "^3.2.0"
   }
 }

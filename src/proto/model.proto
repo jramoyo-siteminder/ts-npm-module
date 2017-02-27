@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+package module;
+option java_package = "com.github";
+option java_outer_classname = "Pet";
+
+message Name {
+    required string first = 1;
+    required string last = 2;
+}
