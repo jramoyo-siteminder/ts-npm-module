@@ -1,3 +1,5 @@
+import * as _ from 'lodash';
+
 export default class Place {
     name: string;
     address: string;
@@ -9,5 +11,9 @@ export default class Place {
 
     public getFullAddress() {
         return `${this.name}, ${this.address}`;
+    }
+
+    public equals(other: Place): boolean {
+        return _.isEqual(this, other);
     }
 };
