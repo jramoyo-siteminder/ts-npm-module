@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/jramoyo-siteminder/ts-npm-module#readme",
   "devDependencies": {
+    "@types/lodash": "^4.14.53",
     "@types/mocha": "^2.2.39",
     "@types/node": "^7.0.5",
     "chai": "^3.5.0",
