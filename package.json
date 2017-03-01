@@ -5,7 +5,9 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "tsc",
+    "clean": "rm -r dist"
   },
   "repository": {
     "type": "git",
@@ -22,16 +24,13 @@
     "@types/node": "^7.0.5",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-clean": "^0.3.2",
     "gulp-mocha": "^4.0.1",
-    "gulp-typescript": "^3.1.5",
-    "merge2": "^1.0.3",
-    "run-sequence": "^1.2.2",
     "ts-node": "^2.1.0",
     "tsconfig-paths": "^2.1.1",
     "typescript": "^2.2.1"
   },
   "dependencies": {
+    "lodash": "^4.17.4",
     "proto-npm-module": "git+ssh://git@github.com/jramoyo-siteminder/proto-npm-module.git#1.0.0"
   }
 }
